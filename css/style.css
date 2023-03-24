@@ -1,3 +1,4 @@
+/* Reset All Browser defaults*/
 * {
   margin: 0;
   padding: 0;
@@ -12,18 +13,23 @@ section {
   display: block;
 }
 
+/* Set the margin for the #wrapper element */
 body {
   background-color: #f2f2f2;
 }
 
+/* Remove the underline from all links */
 a {
   text-decoration: none;
 }
 
+/* Set the margin for the #wrapper element */
+/* This Element sets us alignment for all the content*/
 #wrapper {
   margin: 0px 125px;
 }
 
+/* Set all the font properties for h2 elements */
 h2 {
   font-family: Tahoma;
   font-style: normal;
@@ -34,12 +40,13 @@ h2 {
   color: #222222;
 }
 
-/* Header */
+/* Set the width and margin for the header element */
 header {
   width: 100%;
   margin-top: 76px;
 }
 
+/* Set the background image and dimensions for the logo */
 #logo {
   background-image: url("../images/star.png");
   background-repeat: no-repeat;
@@ -48,22 +55,23 @@ header {
   width: 88px;
   display: block;
 }
-/*  position: relative;  Not yet */
 
+
+/* Set the font properties and position for the text in the logo */
 #logo span {
   font-family: tahoma;
   padding-left: 110px;
   color: #222222;
   font-size: 60px;
 }
-/*  position: absolute; /* Not yet */
-/*  margin-top: 10px;    Not yet */
 
 /* Nav */
+/* Add space above nav element */
 nav {
   margin-top: 26px;
 }
 
+/* Set the font properties and color for the links in the nav */
 nav a {
   font-family: Tahoma;
   font-style: normal;
@@ -77,15 +85,18 @@ nav a {
   margin-right: 24px;
 }
 
+/* Set the hover(when mouse hovers over the element) color for links in the nav */
 nav a:hover {
   color: #1434e1;
 }
 
 /* Main */
+/* Add space around images (3 images on the top)*/
 #cover-photo-section {
   margin-top: 40px;
 }
 
+/* Set the margin for all but the last img element in the #cover-photo-section */
 #cover-photo-section img:not(:last-child) {
   margin-right: 30px;
 }
@@ -94,6 +105,7 @@ nav a:hover {
   margin-top: 40px;
 }
 
+/* Set the font properties and width for text in the #about-me-section */
 #about-me-section p {
   font-family: Tahoma;
   font-style: normal;
@@ -110,24 +122,30 @@ nav a:hover {
   margin-top: 60px;
 }
 
+/* Remove the bullet points from the list */
 #programming-languages-section ul {
   list-style: none;
 }
 
 #programming-languages-section ul li {
   height: 54px;
-  /* position: relative; /* Not yet */
 }
 
+/* Set the margin for all but the last li element in #programming-languages-section */
 #programming-languages-section ul li:not(:last-child) {
   margin-bottom: 30px;
 }
 
+/* set margins for the first li element */
 #programming-languages-section ul li:first-child {
   margin-top: 8px;
-  vertical-align: middle;
 }
 
+/* Align Image to text vertically in the middle */
+#programming-languages-section ul li img{
+    vertical-align: middle;
+}
+/* Set style to the text in List */
 #programming-languages-section ul li span {
   margin-left: 29px;
   font-family: tahoma;
@@ -135,11 +153,11 @@ nav a:hover {
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
+  /* This line Sets space between each letter to specific value in pixels */
   letter-spacing: 4px;
+  /* This line makes Each letter in tex UPPERCASE */
   text-transform: uppercase;
   color: #000000;
-  /*  position: absolute; /* Not yet */
-  /*  margin-top: 15px; /* Not yet */
 }
 
 #movie-section {
@@ -156,6 +174,7 @@ footer section {
   margin: 0px 125px;
 }
 
+/* Here we add The line under the footer menu*/
 #footer-links-section {
   border-bottom: 1px solid #ffffff;
   padding-top: 59px;
@@ -174,7 +193,7 @@ footer section {
   line-height: 28px;
   color: #ffffff;
 }
-
+ /* Set social icons styling */
 #footer-links-section button {
   background-color: #c6b393;
   color: #ffffff;
